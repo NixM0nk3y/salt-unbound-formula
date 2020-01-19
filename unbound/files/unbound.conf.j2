@@ -61,7 +61,7 @@ stub-zone:
 forward-zone:
     name: {{zonename}}
         {%- for option_name, option_value in options.items() %}
-{%- if option_name == "forward-addr %}
+{%- if option_name == "forward-addr" %}
         {%- for forwarder in option_value %}
     forward-addr: {{forwarder}}
         {% endfor %}
