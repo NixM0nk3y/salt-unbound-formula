@@ -64,7 +64,7 @@ forward-zone:
 {%- if option_name == "forward-addr" %}
         {%- for forwarder in option_value %}
     forward-addr: {{forwarder}}
-        {% endfor %}
+        {%- endfor %}
 {%- else %}
     {{option_name}}: {{option_value}}
 {%- endif -%}
